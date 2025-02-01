@@ -1,27 +1,31 @@
+// filepath: /c:/Users/user/Documents/Programming-Fundamentals-OOP/Labs/Lab 1/С#/StringHandlerApp/StringHandler.cs
 using System;
 using System.Linq;
 
-class StringHandler
+namespace StringHandlerApp
 {
-    private string data; // Stores the string data
-
-    public StringHandler(string str)
+    public class StringHandler
     {
-        data = str; // Initialize string
-    }
+        private string data; // Stores the string data
 
-    public int GetLength()
-    {
-        return data.Length; // Returns the length of the string
-    }
+        public StringHandler(string str)
+        {
+            data = str; // Initialize string
+        }
 
-    public string GetSortedDescending()
-    {
-        return new string(data.OrderByDescending(c => c).ToArray()); // Sort characters in descending order
-    }
+        public int GetLength()
+        {
+            return data.Length; // Returns the length of the string
+        }
 
-    public string GetValue()
-    {
-        return data; // Returns the original string
+        public string GetSortedDescending()
+        {
+            return new string(data.OrderByDescending(c => c).ToArray()); // Sort characters in descending order
+        }
+
+        public string GetValue()
+        {
+            return data; // Returns the original string
+        }
     }
 }

@@ -5,20 +5,24 @@
 * Lab 1.1 C#
 */
 
+// filepath: /c:/Users/user/Documents/Programming-Fundamentals-OOP/Labs/Lab 1/С#/StringHandlerApp/Program.cs
 using System;
 
-class Program
+namespace StringHandlerApp
 {
-    static void Main()
+    class Program
     {
-        Console.Write("Enter a string: ");
-        string input = Console.ReadLine(); // Read user input
+        static void Main()
+        {
+            Console.Write("Enter a string: ");
+            string input = Console.ReadLine(); // Read user input
 
-        StringHandler handler = new StringHandler(input);
+            StringHandler handler = new StringHandler(input);
 
-        // Output the results
-        Console.WriteLine("Original string: " + handler.GetValue());
-        Console.WriteLine("String length: " + handler.GetLength());
-        Console.WriteLine("Sorted (descending): " + handler.GetSortedDescending());
+            // Output the results
+            Console.WriteLine("Original string: " + handler.GetValue());
+            Console.WriteLine("String length: " + handler.GetLength());
+            Console.WriteLine("Sorted (descending): " + handler.GetSortedDescending());
+        }
     }
 }

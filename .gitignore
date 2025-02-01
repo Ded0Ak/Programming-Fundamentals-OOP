@@ -34,6 +34,7 @@
 # C# specific ignores
 bin/
 obj/
+Labs/Lab 1/C#/Lab1/bin/
 *.exe
 *.dll
 *.pdb
@@ -46,6 +47,7 @@ obj/
 *.csproj.user
 *.csproj.vspscc
 *.sln.docstates
+*.sln
 
 # TypeScript specific ignores
 node_modules/
