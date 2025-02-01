@@ -30,3 +30,27 @@
 *.exe
 *.out
 *.app
+
+# C# specific ignores
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.mdb
+*.log
+*.user
+*.rsuser
+*.suo
+*.userprefs
+*.csproj.user
+*.csproj.vspscc
+*.sln.docstates
+
+# TypeScript specific ignores
+node_modules/
+dist/
+*.tsbuildinfo
+
+# TypeScript cache
+*.tscache
