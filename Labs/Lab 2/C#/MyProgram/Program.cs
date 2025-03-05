@@ -19,6 +19,6 @@ class Program
 
         Console.WriteLine($"Original string: {str.GetValue()}");
         Console.WriteLine($"String length: {str.GetLength()}");
-        Console.WriteLine($"Sorted string: {str.SortDescending()}");
+        Console.WriteLine($"String sorted in descending order: {str.SortDescending()}");
     }
 }
