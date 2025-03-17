@@ -15,6 +15,6 @@ readline.question("Enter a string: ", function (input) {
     var str = new MyStrManip_1.StringManipulator(input);
     console.log("Original string: ".concat(str.getValue()));
     console.log("String length: ".concat(str.getLength()));
-    console.log("String sorted in descending order: ".concat(str.sortDescending()));
+    console.log("Sorted string: ".concat(str.sortDescending()));
     readline.close();
 });
