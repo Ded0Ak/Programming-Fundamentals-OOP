@@ -13,7 +13,7 @@ class Program
     static void Main()
     {
         Triangle T1 = new Triangle();
-        Triangle T2 = new Triangle(2, 3, 5, 6, 7, 8);
+        Triangle T2 = new Triangle(2, 3, 5, 8, 7, 5);
         Triangle T3 = new Triangle(T2);
 
         T3 = T3 * 2;
