@@ -14,8 +14,8 @@ class CharMatrix
         get
         {
             if (column < 0 || column >= matrix.GetLength(1))
-                throw new IndexOutOfRangeException("Column index is out of bounds.");
-                
+                throw new IndexOutOfRangeException("Column index is out of bounds");
+
             string result = "";
             for (int row = 0; row < matrix.GetLength(0); row++)
             {
@@ -66,10 +66,10 @@ class Program
 
         matrix.PrintMatrix();
 
-        Console.WriteLine("\nString from column 0: " + matrix[0]);
-        Console.WriteLine("String from column 1: " + matrix[1]);
-        Console.WriteLine("String from column 2: " + matrix[2]);
+        Console.WriteLine("\nString from column 0 " + matrix[0]);
+        Console.WriteLine("String from column 1 " + matrix[1]);
+        Console.WriteLine("String from column 2 " + matrix[2]);
 
-        Console.WriteLine($"Total number of digits in the matrix: {matrix.DigitCount}");
+        Console.WriteLine($"Total number of digits in matrix:{matrix.DigitCount}");
     }
 }
